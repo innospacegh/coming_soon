@@ -1,0 +1,25 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', 'sans-serif';
+    background-image: url(../images/innospace_logo-whitebg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100vh; 
+}
+
+.heading {
+    padding-top: 60px;
+    font-size: 40px;
+    text-align: center;
+    color: #494948;
+}
+
+@media screen and (min-width: 600px) {
+    .heading {
+        font-size: 60px;
+    }
+}
