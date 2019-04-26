@@ -1,25 +1,307 @@
 *, *::before, *::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-    font-family: 'Montserrat', 'sans-serif';
-    background-image: url(../images/innospace_logo-whitebg.png);
+    font-family: 'Roboto', 'sans-serif';
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 100vh; 
 }
 
-.heading {
-    padding-top: 60px;
-    font-size: 40px;
+.header {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 800px;
+    background-image: linear-gradient(
+        rgba(52, 58, 64, 0.9), 
+        rgba(52, 58, 64, 0.9)
+      ), url('../images/Coworking-Office-Space-01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navigation */
+.navigation {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+.navigation-container {
+    max-width: 1900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    position: relative;
+}
+.navigation-brand {
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 10px
+}
+.navigation-icon {
+   width: 150px;
+   display: block;
+}
+.navigation-menu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+.navigation-list {
+    list-style: none;
+    padding: 60px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background-color: white;
+    width: 420px;
+}
+
+.navigation-item {
+    display: block;
+    padding: 16px;
+}
+
+.navigation-link {
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+}
+.navigation-link:hover {
+    color: #10AC82;
+}
+
+
+.header-content {
+    padding: 60px;
+    padding-top: 210px;
+    padding-bottom: 160px;
     text-align: center;
-    color: #494948;
+
+}
+.header-text-main {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 1.31;
+    letter-spacing: -0.025em;
+    text-shadow: rgba(0, 0, 0, 0.004) 1px 1px 1px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.header-text-sub {
+    color: rgba(250, 250, 250, 0.8);
+    line-height: 2.1;
+    text-shadow: rgba(250, 250, 250, 0.004) 1px 1px 1px;
+    font-size: 1em;
 }
 
-@media screen and (min-width: 600px) {
-    .heading {
-        font-size: 60px;
+.section-container {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 25px 10px;
+}
+.section-heading {
+    font-family: "Chivo", serif;
+    font-size: 45px;
+    font-weight: 300;
+    margin: 12px 0;
+}
+.services {
+
+}
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service-card {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+.service-card-icon {
+    display: block;
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+    margin: 20px auto;
+}
+.service-card-heading {
+    font-weight: 300;
+    font-size: 26px;
+}
+.spaces {
+    background: rgb(245, 245, 245);
+}
+.space-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.space-card {
+    background: white;
+    border: 1px solid rgba(20, 20, 20, 0.2);
+    max-width: 380px;
+    min-width: 280px;
+    height: 380px;
+    border-radius: 5px;
+    margin: 16px 0;
+    
+}
+.space-card-image {
+    height: 215px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.private {
+    background-image: url('../images/Private_Office_ls.jpeg');
+    
+}
+.open {
+    background-image: url('../images/Open_Space_ls.jpeg');
+}
+.event {
+    background-image: url('../images/Event_Space_ls.jpeg');
+}
+
+.space-card-content {
+    padding: 12px 16px;
+}
+.space-card-heading {
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 22px;
+}
+.space-card-subtext {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 10px 0;
+    line-height: 22px;
+    color: rgb(37, 39, 41);
+    text-rendering: optimizeLegibility;
+}
+.space-card-link {
+    text-decoration: none;
+    font-weight: 700;
+    margin: 10px 0;
+    font-size: 14px;
+}
+.contacts {
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+.contact-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-card {
+    width: 250px;
+    text-align: center;
+    padding: 16px 0;
+    margin: 0 auto;
+}
+.contact-icon {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact-list {
+    margin: 0;
+    padding: 0;
+}
+.contact-item {
+    list-style: none;
+    padding: 8px;
+    font-family: 'Chivo', 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.contact-number {
+    font-family: 'Chivo', 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+}
+.map-section {
+    height: 450px;
+}
+.map {
+    width: 100%;
+}
+
+.footer {
+    background-color: rgb(52, 58, 64);
+}
+.footer-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-social-link {
+    margin-right: 16px;
+    margin-left: 16px;
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+         height: 550px;
+    }
+    .header-content {
+        padding: 20px;
+        padding-top: 120px;
+    }
+    .header-text-main {
+        font-size: 40px;
+    }
+    .header-content {
+        width: 100%;
+    }
+    .navigation-container {
+        padding-left: 20px;
+    }
+    .space-cards {
+        flex-direction: column;
+    }
+    .space-card {
+         
+    }
+    .section-container {
+        padding: 20px 10px;
+    }
+    .section-heading {
+        font-size: 40px;
+        text-align: center;
+    }
+    .footer-brand {
+        margin: 8px auto;
+    }
+    .footer-social {
+        margin: 8px auto;
     }
 }
