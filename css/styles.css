@@ -154,8 +154,7 @@ body {
 .space-card {
     background: white;
     border: 1px solid rgba(20, 20, 20, 0.2);
-    max-width: 380px;
-    min-width: 280px;
+    width: 380px;
     height: 380px;
     border-radius: 5px;
     margin: 16px 0;
@@ -287,9 +286,15 @@ body {
     }
     .space-cards {
         flex-direction: column;
+        justify-content: space-around;
+        justify-items: center;
     }
     .space-card {
-         
+        width: none;
+        max-width: 320px;
+        min-width: 280px;
+        justify-self: center;
+        margin: 10px auto;
     }
     .section-container {
         padding: 20px 10px;
