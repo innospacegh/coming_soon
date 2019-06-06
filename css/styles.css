@@ -119,6 +119,25 @@ body {
     font-weight: 300;
     margin: 12px 0;
 }
+.about {
+    background: rgb(245, 245, 245);
+}
+
+.about-image {
+    background: url('../images/About.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+.about-content {
+
+}
+.about-text {
+    line-height: 22px;
+    font-weight: 300;
+}
 .services {
 
 }
@@ -283,6 +302,9 @@ body {
     }
     .navigation-container {
         padding-left: 20px;
+    }
+    .about-image {
+        height: 250px;
     }
     .space-cards {
         flex-direction: column;
