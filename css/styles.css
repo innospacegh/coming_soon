@@ -131,16 +131,12 @@ body {
     height: 400px;
     width: 100%;
 }
-.about-content {
 
-}
 .about-text {
     line-height: 22px;
     font-weight: 300;
 }
-.services {
 
-}
 .service-cards {
     display: flex;
     justify-content: space-between;
@@ -284,6 +280,9 @@ body {
     font-size: 32px;
     text-decoration: none;
     color: white;
+}
+.footer-social-link:hover {
+    color: #10AC82;
 }
 
 @media screen and (max-width: 600px) {
