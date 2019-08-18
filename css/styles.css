@@ -274,15 +274,22 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.footer-social {
+    display: flex;
+}
 .footer-social-link {
+    display: block;
+    width: 35px;
+    height: 35px;
     margin-right: 16px;
     margin-left: 16px;
-    font-size: 32px;
     text-decoration: none;
-    color: white;
 }
-.footer-social-link:hover {
-    color: #10AC82;
+.footer-social-link:hover .path {
+    fill: #10AC82;
+}
+.social-icon .path {
+    fill: #ffffff;
 }
 
 @media screen and (max-width: 600px) {
@@ -311,7 +318,6 @@ body {
         justify-items: center;
     }
     .space-card {
-        width: none;
         max-width: 320px;
         min-width: 280px;
         justify-self: center;
