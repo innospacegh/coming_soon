@@ -1,11 +1,13 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', 'sans-serif';
+    font-family: "Roboto", "sans-serif";
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -15,9 +17,10 @@ body {
     background-color: rgba(255, 255, 255, 0.9);
     height: 800px;
     background-image: linear-gradient(
-        rgba(52, 58, 64, 0.9), 
-        rgba(52, 58, 64, 0.9)
-      ), url('../images/Coworking-Office-Space-01.jpg');
+            rgba(52, 58, 64, 0.9),
+            rgba(52, 58, 64, 0.9)
+        ),
+        url("../images/Coworking-Office-Space-01.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,11 +46,11 @@ body {
     color: whitesmoke;
     position: relative;
     padding-top: 16px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
 }
 .navigation-icon {
-   width: 150px;
-   display: block;
+    width: 150px;
+    display: block;
 }
 .navigation-menu {
     width: 100vw;
@@ -79,19 +82,17 @@ body {
     text-decoration: none;
 }
 .navigation-link:hover {
-    color: #10AC82;
+    color: #10ac82;
 }
-
 
 .header-content {
     padding: 60px;
     padding-top: 210px;
     padding-bottom: 160px;
     text-align: center;
-
 }
 .header-text-main {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-weight: 900;
     font-size: 55px;
     line-height: 1.31;
@@ -124,7 +125,7 @@ body {
 }
 
 .about-image {
-    background: url('../images/About.jpeg');
+    background: url("../images/About.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -133,7 +134,8 @@ body {
 }
 
 .about-text {
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 1.5;
     font-weight: 300;
 }
 
@@ -173,7 +175,6 @@ body {
     height: 380px;
     border-radius: 5px;
     margin: 16px 0;
-    
 }
 .space-card-image {
     height: 215px;
@@ -184,14 +185,13 @@ body {
 }
 
 .private {
-    background-image: url('../images/Private_Office_ls.jpeg');
-    
+    background-image: url("../images/Private_Office_ls.jpeg");
 }
 .open {
-    background-image: url('../images/Open_Space_ls.jpeg');
+    background-image: url("../images/Open_Space_ls.jpeg");
 }
 .event {
-    background-image: url('../images/Event_Space_ls.jpeg');
+    background-image: url("../images/Event_Space_ls.jpeg");
 }
 
 .space-card-content {
@@ -245,11 +245,11 @@ body {
 .contact-item {
     list-style: none;
     padding: 8px;
-    font-family: 'Chivo', 'Roboto', sans-serif;
+    font-family: "Chivo", "Roboto", sans-serif;
     font-size: 18px;
 }
 .contact-number {
-    font-family: 'Chivo', 'Roboto', sans-serif;
+    font-family: "Chivo", "Roboto", sans-serif;
     text-decoration: none;
     font-size: 18px;
 }
@@ -286,7 +286,7 @@ body {
     text-decoration: none;
 }
 .footer-social-link:hover .path {
-    fill: #10AC82;
+    fill: #10ac82;
 }
 .social-icon .path {
     fill: #ffffff;
@@ -294,7 +294,7 @@ body {
 
 @media screen and (max-width: 600px) {
     .header {
-         height: 550px;
+        height: 550px;
     }
     .header-content {
         padding: 20px;
@@ -311,6 +311,9 @@ body {
     }
     .about-image {
         height: 250px;
+    }
+    .about-text {
+        font-size: 16px;
     }
     .space-cards {
         flex-direction: column;
